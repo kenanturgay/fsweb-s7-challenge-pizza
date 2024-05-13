@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Poller+One&family=Poppins:ital,wght@0,100;0,200;0,600;1,100;1,200;1,400&display=swap');
+
+.header {
+  
+  background-color: red;
+  display: flex;
+  flex-direction: column;
+  margin-top: 0px;
+  margin-bottom: 15px;
+  margin-right: 0px;
+  margin-left: 0px;
+  
+}
+
+.navbar-header {
+  position: relative;
+  font-size: 28px;
+  text-align: center;
+  color: white;
+  
+}
+
+.navbar-links {
+  display: flex;
+  justify-content: start;
+  align-items: center; 
+  margin: 0 auto; 
+  max-width: 800px; 
+  min-width: 500px; 
+  
+}
+
+
+
+.navbar {
+  font-size: 14px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: white;
+  
+}
+
+.navbar a:not(:last-child)::after {
+  content: " - ";
+}
+
+

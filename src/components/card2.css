@@ -1,0 +1,39 @@
+.selectionArea {
+    display: flex;
+    gap: 200px;
+    font-size: 18px;
+    font: bold;
+
+    
+    
+    
+  }
+
+  .boyut-secimi span{
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 2px;  
+    
+    
+  }
+  
+  .hamur-secimi span{
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 2px;  
+    
+    
+  }
+  
+  .zorunlu {
+    color: red;
+  }
+  
+  .boyutlar label {
+    display: flex;
+    align-items: start;
+    font-size: 15px;
+    padding-bottom: 3px;
+  }
+
+  
