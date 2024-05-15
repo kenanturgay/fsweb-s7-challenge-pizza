@@ -1,32 +1,32 @@
-
+import { Router } from 'react-router-dom/cjs/react-router-dom.min'
 import './App.css'
-import Body from './components/Body'
-
-import Navbar from './components/Navbar'
+import Home from './components/Home'
+import SiparisOlustur from "./components/SiparisOlustur"
+import { Switch, Route } from 'react-router-dom'
+import SiparisAlındı from './components/SiparisAlındı'
 
 function App() {
-  
-
   return (
     <>
-
-      <section class="navbar-body">
-        <div>
-
-          <Navbar/>
-        
-        
-        </div>
-        <div>
-
-        
-          <Body/>
-        
-        </div>
-      </section>
       
-      
-      
+        <Switch>
+          <Route path="/" Exact>
+            <Home/>
+          </Route>
+          <Route path="/Siparis_olustur">
+            <SiparisOlustur/>
+          </Route>
+
+          <Route path="/Siparis_alındı">
+            <SiparisAlındı/>
+          </Route>
+          
+        </Switch>
+
+         
+        
+        
+    
     </>
   )
 }

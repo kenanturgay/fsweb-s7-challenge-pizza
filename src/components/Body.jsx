@@ -2,6 +2,10 @@ import React from 'react';
 import "./body.css"
 import Card1 from './Card1';
 import Card2 from "./Card2";
+import Card3 from './Card3';
+import Card4 from './Card4';
+import Card5 from './Card5';
+import Card6 from './Card6';
 
 const Body = () => {
   return (
@@ -13,8 +17,15 @@ const Body = () => {
         <Card2/>
       </div>
       <div className="card">
-        <h2>Card 3</h2>
-        <p>This is the content of Card 3.</p>
+        <Card3/>
+      </div>
+      <div className="card">
+        <Card4/>
+      </div>
+      <div className="card" style={{ display: 'flex', flexDirection: "row", justifyContent: 'space-between', marginBottom:"300px"}}>
+        <Card5/>
+        <Card6/>
+  
       </div>
     </div>
   );
