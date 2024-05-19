@@ -11,10 +11,10 @@ function App() {
       <Route path="/" exact>
         <Home />
       </Route>
-      <Route path="/Siparis_olustur">
+      <Route path="/Siparis_olustur" exact>
         <SiparisOlustur />
       </Route>
-      <Route path="/Siparis_alındı">
+      <Route path="/Siparis_alındı" exact>
         <SiparisAlındı />
       </Route>
     </Switch>

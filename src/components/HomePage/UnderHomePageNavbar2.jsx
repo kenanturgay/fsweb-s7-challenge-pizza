@@ -1,9 +1,16 @@
 import React from 'react'
 import UnderHomePageNavbar3 from './UnderHomePageNavbar3'
+import { useHistory } from 'react-router-dom';
 
 export default function UnderHomePageNavbar2() {
+
+    const history = useHistory();
+
+  const handleClick = () => {
+    history.push('/Siparis_olustur');
+  };
   return (
-    <div style={{backgroundColor:"rgb(240, 224, 209)", backgroundSize: 'cover', backgroundPosition: 'center', width: '100%', height: '100vh', paddingTop:"50px"
+    <div style={{backgroundColor:"#FAF7F2", backgroundSize: 'cover', backgroundPosition: 'center', width: '100%', height: '100vh', paddingTop:"50px"
     }}>
         
         <div style={{display:"flex", flexDirection:"row", gap:"15px", justifyContent:"center", paddingTop:"80px"}}>
@@ -17,10 +24,10 @@ export default function UnderHomePageNavbar2() {
                     <span style={{color:"white", fontSize: '35px'}}>
                         Lezzetus
                     </span>
-                    <span style={{color:"white",  fontSize: '14px'}}>
+                     <span style={{color:"white",  fontSize: '14px'}}>
                         Position:Absolute Acı Burger
                     </span>
-                    <button onClick={() => handleCategoryChange('icecekler')} style={{ width: '3cm', height: '1cm', backgroundColor: 'white', border: 'none', color:
+                    <button onClick={handleClick} style={{ width: '3cm', height: '1cm', backgroundColor: 'white', border: 'none', color:
                     'red', borderRadius:"1cm", fontSize: '10px' }}>
                         SİPARİŞ VER
                         </button>
@@ -39,7 +46,7 @@ export default function UnderHomePageNavbar2() {
                             Burger Menü
                         </span>
                         
-                        <button onClick={() => handleCategoryChange('icecekler')} style={{ width: '3cm', height: '1cm', backgroundColor: 'white', border: 'none', color:
+                        <button onClick={handleClick} style={{ width: '3cm', height: '1cm', backgroundColor: 'white', border: 'none', color:
                         'red', borderRadius:"1cm", fontSize: '10px' }}>
                             SİPARİŞ VER
                             </button>
@@ -58,7 +65,7 @@ export default function UnderHomePageNavbar2() {
                             npm gibi kurye
                         </span>
                         
-                        <button onClick={() => handleCategoryChange('icecekler')} style={{ width: '3cm', height: '1cm', backgroundColor: 'white', border: 'none', color:
+                        <button onClick={handleClick} style={{ width: '3cm', height: '1cm', backgroundColor: 'white', border: 'none', color:
                         'red', borderRadius:"1cm", fontSize: '10px' }}>
                             SİPARİŞ VER
                             </button>

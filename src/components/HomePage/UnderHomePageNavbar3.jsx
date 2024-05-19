@@ -5,9 +5,6 @@ const menuItems = [
     id: 1,
     category: 'ramen',
     name: 'Ramen',
-    price:48,
-    rating:4.7,
-    comment:150,
 
     products: [
       { id: 1, name: 'Classic Burger', imageUrl: './Assets/mile2-aseets/pictures/food-1.png' },
@@ -97,7 +94,7 @@ export default function UnderHomePageNavbar1() {
     alignItems: 'center',
     flexWrap: 'wrap',
     gap: '20px',
-    backgroundColor: "rgb(240, 224, 209)"
+    backgroundColor: "#FAF7F2"
   };
 
   const buttonStyle = (buttonCategory) => ({
@@ -111,7 +108,7 @@ export default function UnderHomePageNavbar1() {
 
   return (
     <>
-      <div style={{ width: '100%', height: '100vh', gap: "20px", backgroundColor: "rgb(240, 224, 209)" }}>
+      <div style={{ width: '100%', height: '100vh', gap: "20px", backgroundColor: "#FAF7F2" }}>
         <div>
           <nav style={{ padding: '10px 0', display: "flex", flexDirection: "column", justifyContent: "center" }}>
             <ul style={{ listStyle: 'none', paddingTop: "30px", display: "flex", flexDirection: "row", alignItems: "center", justifyContent: "center", gap: "30px" }}>

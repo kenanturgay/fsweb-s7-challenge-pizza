@@ -14,7 +14,7 @@ const listFood={
 export default function Card1() {
   return (
     
-    <section>
+    <section style={{}}>
         <div style={{ paddingBottom:"25px"}}>
             <h3>{listFood.name}</h3>
         </div>
